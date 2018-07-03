@@ -32,14 +32,14 @@
 	_You **can** combine them_
 ```
 效果如下：  
-    This text will be italic  
-    *This text will be italic*	效果为倾斜  
-    _This will also be italic_	效果为倾斜  
+This text will be italic  
+*This text will be italic*	效果为倾斜  
+_This will also be italic_	效果为倾斜  
       
-    **This text will be bold**	效果为加粗  
-    __This will also be bold__	效果为加粗  
+**This text will be bold**	效果为加粗  
+__This will also be bold__	效果为加粗  
     
-    _You **can** combine them_  
+_You **can** combine them_  
 #### 列表
 ##### 无序列表
 ```markdown
