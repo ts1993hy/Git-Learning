@@ -59,4 +59,7 @@
    1. Item 3a
    1. Item 3b
 #### 图片
-![logo]()
+local access image:  
+![local access image](/GitHub-Markdown/a.jpg)  
+remote access image:
+![remote access image](https://www.baidu.com/img/bd_logo1.png?where=super)  
