@@ -31,15 +31,6 @@
 
 	_You **can** combine them_
 ```
-效果如下：  
-This text will be italic  
-*This text will be italic*	效果为倾斜  
-_This will also be italic_	效果为倾斜  
-      
-**This text will be bold**	效果为加粗  
-__This will also be bold__	效果为加粗  
-    
-_You **can** combine them_  
 #### 列表
 ##### 无序列表
 ```markdown
@@ -53,3 +44,19 @@ _You **can** combine them_
 * Item 2
   * Item 2a
   * Item 2b
+##### 有序列表
+```markdown
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+```
+效果如下：  
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+#### 图片
+![logo]()
