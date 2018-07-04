@@ -20,7 +20,7 @@
 	######          六级标题
 ```  
 ### 2. 强调
->强调即使你想要强调的文本与普通文本不一样，在MarkDown语法规则中，有两种强调类型（倾斜和加粗），每种强调类型又有两种不同的表现形式（`*`和`_`）。其中强调的时候强调字符必须紧挨着第一个字符和最后一个字符，紧挨着强调字符的字符不能是空格。
+>强调会将你想要强调的文本变得与普通文本不一样，在MarkDown语法规则中，有两种强调类型（倾斜和加粗），每种强调类型又有两种不同的表现形式（`*`和`_`）。其中强调的时候强调字符必须紧挨着第一个字符和最后一个字符，紧挨着强调字符的字符不能是空格（如果是有`*`后是空格就成了列表了）。
 ```markdown
 	This text will be italic	正常文字
 	*This text will be italic*	效果为倾斜
@@ -31,7 +31,6 @@
 
 	_You **can** combine them_	双重叠加
 ```
-* This text will be italic*	效果为倾斜
 ### 3. 列表
 >列表的重要性就不必多说了把（ps：列表开始有几个空格都行的，不过同级之间要对齐）。
 #### a. 无序列表
@@ -47,10 +46,11 @@
   * Item 2a
   * Item 2b
 #### b. 有序列表
+>有序列表这儿用数字开始，数字后面有没有`.`或者`、`都行，数字是乱序的也行，效果都是下面这样的效果（ps：数字和文字之间要有一个间隔）。
 ```markdown
-1. Item 1
-1. Item 2
-1. Item 3
+2. Item 1
+3. Item 2
+2. Item 3
    1. Item 3a
    1. Item 3b
 ```
@@ -63,8 +63,9 @@
 ### 4. 图片
 >显示图片语法格式为`![任意文字](href)`  
 ```markdown
-![local access image](a.jpg)	//访问本地图片，相对于当前项目的地址
-![remote access image](https://www.baidu.com/img/bd_logo1.png?where=super)  //访问远程图片，是指互联网上的其他图片的地址
+![local access image](a.jpg)	//访问本地图片，相对于当前项目的地址，这个是表示本目录下
+![local access image](/GitHub-Markdown/a.jpg)	//访问本地图片，当前项目的路径
+![remote access image](https://www.baidu.com/img/bd_logo1.png?where=super)  //访问互联网上的其他图片
 ```
 ### 5. 链接
 >语法格式为`[任意文字](herf)`
@@ -84,4 +85,8 @@
 > 
 效果如下：  
 `巫师3` `角色扮演` `剧情`
-
+## 四、GitHub额外的有用功能
+>GitHub.com使用自己版本的Markdown语法，该语法提供了一组额外的有用功能，其中许多功能可以更轻松地使用GitHub.com上的内容。
+### 1. 代码高亮
+>`字符重复3次，表示开始和结束，开始的3个字符后接代码的语言，效果如下
+![highlight image](highlight.jpg)
