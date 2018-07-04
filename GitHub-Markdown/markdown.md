@@ -1,6 +1,5 @@
 # MarkDown 
 >Markdown是一种轻量级且易于使用的语法，用于在GitHub平台上设置所有形式的书写样式。
-> 
 ## 一、我们可以学到什么呢？
 * Markdown格式如何使样式化协作编辑变得容易
 * Markdown与传统的格式化方法有何不同
@@ -63,15 +62,15 @@
 ### 4. 图片
 >显示图片语法格式为`![任意文字](href)`  
 ```markdown
-![local access image](a.jpg)	//访问本地图片，相对于当前项目的地址，这个是表示本目录下
-![local access image](/GitHub-Markdown/a.jpg)	//访问本地图片，当前项目的路径
+![local access image](highlight.jpg)	//访问本地图片，相对于当前项目的地址，这个是表示本目录下
+![local access image](/GitHub-Markdown/highlight.jpg)	//访问本地图片，当前项目的路径
 ![remote access image](https://www.baidu.com/img/bd_logo1.png?where=super)  //访问互联网上的其他图片
 ```
 ### 5. 链接
 >语法格式为`[任意文字](herf)`
->```markdown
->百度了解一下->[百度](https://www.baidu.com)
->```
+```markdown
+百度了解一下->[百度](https://www.baidu.com)
+```
 ### 6. 引用
 >使用一个`>`符号就好，例子如下
 ```markdown
@@ -88,5 +87,18 @@
 ## 四、GitHub额外的有用功能
 >GitHub.com使用自己版本的Markdown语法，该语法提供了一组额外的有用功能，其中许多功能可以更轻松地使用GitHub.com上的内容。
 ### 1. 代码高亮
->`字符重复3次，表示开始和结束，开始的3个字符后接代码的语言，效果如下
+```markdown
+`字符重复3次，表示开始和结束，该三个字符必须是该行的前三个字符，开始的3个字符后接代码的语言，效果如下： 
+```
+### 2.复选框
 ![highlight image](highlight.jpg)
+>`- [x] `表示一个已经被勾选的复选框，而`- [ ] `表示一个没有被勾选的复选框（ps：注意这中间的空格也不能省略），例子如下：  
+- [x] 巫师三好玩吗？
+- [x] Dota2好玩吗？
+- [ ] LOL好玩吗？
+### 3.表格
+>用连字符`-`（对于第一行）分隔，然后使用管道分隔每个列来创建表`|`：  
+预测算法 | 实际为阳性 | 实际为阴性
+------- | ------------ | ------------- 
+预测为阳性 | 真阳性 | 假阳性 
+预测为阴性 | 假阴性 | 真阴性 
