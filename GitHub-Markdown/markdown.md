@@ -1,17 +1,17 @@
 # MarkDown 
 >Markdown是一种轻量级且易于使用的语法，用于在GitHub平台上设置所有形式的书写样式。
 > 
-## 我们可以学到什么呢？
+## 一、我们可以学到什么呢？
 * Markdown格式如何使样式化协作编辑变得容易
 * Markdown与传统的格式化方法有何不同
 * 如何使用Markdown来格式化文本
 * 如何利用GitHub的自动Markdown渲染
 * 如何应用GitHub独特的Markdown扩展
-## 什么是MarkDown呢？
+## 二、什么是MarkDown呢？
 >Markdown是在web上设计文本样式的一种方法，用来控制文档的显示;我们可以使用Markdown将文字格式化为粗体或斜体，添加图像和创建列表。大多数情况下，Markdown只是带有一些非字母字符的常规文本，比如`#`或`*`。
-## 例子
-### 文本  
-#### 标题  
+## 三、语法指南  
+### 1. 标题  
+>想要把一个文本变成标题，需要在该文本前面加上`#`号，一个代表1级标题，两个代表2级标题，以此类推，最多为6级，（ps：`#`必须放在新的一行的开始，即第一个字符）。
 ```markdown
 	#		一级标题
 	##		二级标题
@@ -19,10 +19,11 @@
 	...
 	######          六级标题
 ```  
-#### 强调
+### 2. 强调
+>强调即使你想要强调的文本与普通文本不一样，在MarkDown语法规则中，有两种强调类型（倾斜和加粗），每种强调类型又有两种不同的表现形式（`*`和`_`）。其中强调的时候强调字符必须紧挨着第一个字符和最后一个字符，紧挨着强调字符的字符不能是空格。
 ```markdown
 	This text will be italic	正常文字
-	*This text will be italic*	效果为倾斜	
+	*This text will be italic*	效果为倾斜
 	_This will also be italic_	效果为倾斜
 
 	**This text will be bold**	效果为加粗
@@ -30,8 +31,10 @@
 
 	_You **can** combine them_	双重叠加
 ```
-#### 列表
-##### 无序列表
+* This text will be italic*	效果为倾斜
+### 3. 列表
+>列表的重要性就不必多说了把（ps：列表开始有几个空格都行的，不过同级之间要对齐）。
+#### a. 无序列表
 ```markdown
 * Item 1
 * Item 2
@@ -43,7 +46,7 @@
 * Item 2
   * Item 2a
   * Item 2b
-##### 有序列表
+#### b. 有序列表
 ```markdown
 1. Item 1
 1. Item 2
@@ -57,23 +60,23 @@
 1. Item 3
    1. Item 3a
    1. Item 3b
-#### 图片
+### 4. 图片
 >显示图片语法格式为`![任意文字](href)`  
 ```markdown
 ![local access image](a.jpg)	//访问本地图片，相对于当前项目的地址
 ![remote access image](https://www.baidu.com/img/bd_logo1.png?where=super)  //访问远程图片，是指互联网上的其他图片的地址
 ```
-#### 链接
+### 5. 链接
 >语法格式为`[任意文字](herf)`
 >```markdown
 >百度了解一下->[百度](https://www.baidu.com)
 >```
-#### 引用
+### 6. 引用
 >使用一个`>`符号就好，例子如下
 ```markdown
 >巫师3了解一下啦（ps:真的很棒的游戏）
 ```
-#### 内联代码
+### 7. 内联代码
 >语法格式为
 ```markdown
 `任意文字`
@@ -81,3 +84,4 @@
 > 
 效果如下：  
 `巫师3` `角色扮演` `剧情`
+
